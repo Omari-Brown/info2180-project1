@@ -1,13 +1,23 @@
 /* Add your CSS to this file */
-body {
+div
+{
+    border: 1px solid black;
+}
+body 
+{
     margin: 0;
     font-size: 16px;
 }
-
-.container {
+.container 
+{
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+img
+{
+    width: 150px;
+    height:150px;
 }
 .container h1
 {
@@ -23,15 +33,80 @@ body {
 ul
 {
     list-style-type: none;
-    
 }
 li
 {
-    /*float: right;*/
     display: inline;
     margin: 5px;
 }
-main
+section
 {
-    clear: both;
+    clear:both;
+}
+.overview-hero-image
+{
+    float: left;
+}
+.overview-hero-text
+{
+    float: right;
+    width: 750px;
+}
+/*.learn-about .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+.cards
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.card img
+{
+    width: 180px;
+    height: 180px;
+}
+.testing .container
+{
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.cta
+{
+    float: right;
+}
+.testing-desciption
+{
+    float: left;
+    width: 600px;
+}
+article img
+{
+    float: left;
+}
+article div
+{
+    float: right;
+    width: 750px;
+}
+article
+{
+    clear:both;
+}
+.newsletter .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form
+{
+    display: flex;
+    flex-direction: row;
 }
