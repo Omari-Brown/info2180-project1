@@ -9,3 +9,29 @@ body {
     max-width: 960px;
     width: 100%;
 }
+.container h1
+{
+    float: left;
+}
+.container nav
+{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+ul
+{
+    list-style-type: none;
+    
+}
+li
+{
+    /*float: right;*/
+    display: inline;
+    margin: 5px;
+}
+main
+{
+    clear: both;
+}
