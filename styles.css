@@ -1,12 +1,21 @@
 /* Add your CSS to this file */
+:root
+{
+    --defaultfontdamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --defaultfontsize: 18px;
+}
 div
 {
     border: 1px solid black;
+    margin: 10px;
+    font-family: var(--defaultfontsize);
+    font-size: var(--defaultfontsize);
 }
 body 
 {
     margin: 0;
     font-size: 16px;
+    /*background-color: green;*/
 }
 .container 
 {
@@ -18,17 +27,36 @@ img
 {
     width: 150px;
     height:150px;
+    
 }
-.container h1
+a
 {
-    float: left;
+    text-decoration: none;
+    color: #6b7280;
 }
-.container nav
+a:hover
 {
-    float: right;
+    color: #5A67D8;
+}
+header
+{
+    background-color:white;
+}
+header .container
+{
+    display: flex;
+    justify-content: space-around;
+}
+h1
+{
+    font-size: var(--defaultfontsize);
+}
+nav
+{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    font-size: var(--defaultfontsize);
 }
 ul
 {
@@ -41,30 +69,53 @@ li
 }
 section
 {
-    clear:both;
+    /*Remember to remove this*/
+    /*color: purple;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*border: 5px solid red;*/
+}
+.overview-hero .container
+{
+    display: flex;
+    justify-content: space-around;
+    background-color:#E2E8F0;
 }
 .overview-hero-image
 {
-    float: left;
+    width: 180px;
 }
 .overview-hero-text
 {
-    float: right;
-    width: 750px;
+    width: 600px;
 }
-/*.learn-about .container
+.learn-about .container h2
+{
+    font-size: 24px;
+    color: #48BB78
+}
+.cards
+{
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 480px;
+    grid-gap: 30px;
+    justify-content: center;
+}
+.card
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}*/
-.cards
+    /*border: #E2E8F0;*/
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 5px 5px #888888;
+}
+.card-body h3
 {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 500px;
-    grid-gap: 20px;
-    justify-content: center;
+    color: #48BB78;
+    font-size: 21px;
 }
 .card img
 {
