@@ -6,7 +6,8 @@
 }
 div
 {
-    border: 1px solid black;
+    /*border: 1px solid black;
+    REMEMBER TO REMOVE THIS*/
     margin: 10px;
     font-family: var(--defaultfontsize);
     font-size: var(--defaultfontsize);
@@ -15,7 +16,14 @@ body
 {
     margin: 0;
     font-size: 16px;
-    /*background-color: green;*/
+    /*background-color: green;
+    REMEMBER TO REMOVE THIS*/
+}
+main
+{
+    margin-bottom: 0px;
+    /*border: 3px solid purple;
+    REMEBER TO REMOVE*/
 }
 .container 
 {
@@ -27,14 +35,14 @@ img
 {
     width: 150px;
     height:150px;
-    
 }
-a
+nav a
 {
     text-decoration: none;
     color: #6b7280;
+    
 }
-a:hover
+nav a:hover
 {
     color: #5A67D8;
 }
@@ -45,7 +53,7 @@ header
 header .container
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 h1
 {
@@ -69,17 +77,19 @@ li
 }
 section
 {
-    /*Remember to remove this*/
-    /*color: purple;*/
     margin-top: 15px;
     margin-bottom: 15px;
-    /*border: 5px solid red;*/
+    /*border: 5px solid red;
+    Remember to remove this*/
+}
+.overview-hero
+{
+    background-color:#E2E8F0;
 }
 .overview-hero .container
 {
     display: flex;
     justify-content: space-around;
-    background-color:#E2E8F0;
 }
 .overview-hero-image
 {
@@ -107,7 +117,7 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*border: #E2E8F0;*/
+    border: #E2E8F0;
     width: 220px;
     border-radius: 5px;
     box-shadow: 5px 5px #888888;
@@ -122,33 +132,69 @@ section
     width: 180px;
     height: 180px;
 }
+
+.testing
+{
+    background-color: #4A5568;
+    color: white;
+}
 .testing .container
 {
+    display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 .cta
 {
-    float: right;
+    width: 150px;
+    height: 50px;
+    background-color: #48BB78;
+    border-radius: 5px;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 50px
+}
+.cta .btn
+{
+    color: white;
+    text-decoration: none;
 }
 .testing-desciption
 {
-    float: left;
     width: 600px;
+    
 }
-article img
+.stories h2
 {
-    float: left;
-}
-article div
-{
-    float: right;
-    width: 750px;
+    color: #5A67D8
 }
 article
 {
-    clear:both;
+    display: flex;
+    align-items: center;
+}
+article div
+{
+    width: 750px;
+}
+article img
+{
+    border-radius: 50%;
+}
+.article-body h3
+{
+    font-size: 18px;
+}
+article a
+{
+    color: #5A67D8;
+}
+.newsletter
+{
+    background-color: #48BB78;
+    color: white;
+    margin-bottom: 0px;
 }
 .newsletter .container
 {
@@ -160,4 +206,26 @@ form
 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+form input
+{
+    height: 30px;
+    width: 250px;
+}
+form .btn
+{
+    background-color: #5A67D8;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+footer
+{
+    overflow: hidden;
+    margin-top: 0px;
+    color: white;
+    background-color: #4A5568;
+    /*border: 1px solid #4A556e;*/
+    /*REMEBER TO REMOVE*/
 }
