@@ -9,7 +9,7 @@ window.onload = function ()
     mybutton.addEventListener("click", function (event)
     {
         event.preventDefault();
-        console.log("Nope");
+        console.log("Default prevented");
         const email = document.getElementById("email").value;
         console.log(email);
         if (email.length==0)

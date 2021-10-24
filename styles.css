@@ -16,6 +16,8 @@ body
 {
     margin: 0;
     font-size: 16px;
+    font-family: var(--defaultfontfamily);
+    font-size: var(--defaultfontsize);
     /*background-color: green;
     REMEMBER TO REMOVE THIS*/
 }
@@ -130,7 +132,7 @@ section
 .card img
 {
     width: 220px;
-    height: 220px;
+    height: 185px;
 }
 
 .testing
